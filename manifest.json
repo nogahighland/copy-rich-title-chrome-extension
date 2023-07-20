@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Copy Rich Title Chrome Extension",
-  "description": "Provides a functionality to copy the rich title of the current page to the clipboard. It is instantly triggered by default confifurable shortcut Alt+T",
+  "description": "Provides a functionality to copy the rich title of the current page to the clipboard.",
   "version": "0.1.0",
   "action": {
     "default_popup": "popup/index.html"
