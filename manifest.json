@@ -2,13 +2,14 @@
   "manifest_version": 3,
   "name": "Copy Rich Title Chrome Extension",
   "description": "Provides a functionality to copy the rich title of the current page to the clipboard.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "action": {
     "default_popup": "popup/index.html"
   },
   "permissions": [
     "activeTab",
-    "scripting"
+    "scripting",
+    "clipboardWrite"
   ],
   "commands": {
     "_execute_action": {
