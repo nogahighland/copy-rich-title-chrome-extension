@@ -24,10 +24,10 @@
 
   } else {
     const title = document.querySelector('title').innerText
-      .replace(' | finatextgroup Kibela', '') // Kibela
-      .replace(/ · .+/, '') // GitHub
+      .replace(/\|.*$/, '') // Kibela, terraform
+      .replace(/·.*$/, '') // GitHub
     const url = location.href
-    const body = `<a href="${url}"/>${title}</a>`
+    const body = `<a href="${url}"/>${title.trim()}</a>`
     richText = plainText = body
   }
 
