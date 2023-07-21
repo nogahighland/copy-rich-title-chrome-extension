@@ -37,6 +37,12 @@
       'text/plain': new Blob([plainText], {type: 'text/plain'})
     }
   )
-  await navigator.clipboard.write([item])
+
+  try {
+    await navigator.clipboard.write([item])
+  } catch (e) {
+    return {error: e.message}
+  }
+
   return {richText, plainText}
 })()
