@@ -25,7 +25,8 @@
   } else {
     const title = document.querySelector('title').innerText
       .replace(/\|.*$/, '') // Kibela, terraform
-      .replace(/·.*$/, '') // GitHub
+      .replace(/·.*$/, '') // GitHub Issue
+      .replace(/by .*$/, '') // GitHub PR
     const url = location.href
     const body = `<a href="${url}"/>${title.trim()}</a>`
     richText = plainText = body
