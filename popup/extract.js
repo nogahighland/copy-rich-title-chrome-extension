@@ -1,7 +1,7 @@
 (async function extract() {
   let richText, plainText
 
-  if (/aws.amazon.com$/.test(location.host)) {
+  if (/aws.amazon.com$/.test(location.host) && !/docs.aws.amazon.com/.test(location.host)) {
     const title = document.querySelector('title').innerText
     let roleNameAndAccount = document.querySelector('#nav-usernameMenu').innerText.split(" @ ");
     if (roleNameAndAccount.length === 1) {
